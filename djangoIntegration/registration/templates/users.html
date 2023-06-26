@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Users</title>
+</head>
+<body>
+    <h1>Registered Users</h1>
+    <ul>
+    {% for user in users %}
+        <li>Name: {{ user.name }}</li>
+        <li>Email: {{ user.email }}</li>
+        <br>
+    {% endfor %}
+    </ul>
+</body>
+</html>
